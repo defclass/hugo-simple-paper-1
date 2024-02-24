@@ -1,0 +1,17 @@
+{{ define "main"}}
+<div>
+    <div class="index-content">
+        {{ .Content }}
+    </div>
+    <div class="posts">
+        <h3>Posts</h3>
+        {{ range where .Site.RegularPages "Type" "posts" }}
+        <li>
+            <a href="{{ .Permalink }}"> {{ .Title }} </a> <span>{{.Params.date.Format "Mon Jan 2, 2006"}}</span>
+        </li>
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}
+
