@@ -2,12 +2,14 @@
 <div>
     <h3>{{ .Title }}</h3>
     </hr>
-    <ul>
-        {{ range .Pages }}
-        <li>
-            <a href="{{ .Permalink }}"> {{ .Title }} </a> <span class="list-article-time">{{.Params.date.Format "Mon Jan 2, 2006"}}</span>
-        </li>
-        {{ end }}
-    </ul>
+    <div class="posts">
+        <ul>
+            {{ range .Pages }}
+            <li>
+                <a href="{{ .Permalink }}"> {{ .Title }} </a> <span class="list-article-time">{{.Params.date.Format "Mon Jan 2, 2006"}}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
 </div>
 {{ end }}
