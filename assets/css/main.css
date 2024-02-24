@@ -1,21 +1,21 @@
 body {
-  background-color: #12372A;
+  background-color: #EFECEC;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.4;
-  color: #ADBC9F;
+  color: #0C2D57;
   width: 700px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 header#banner a {
-  color: #ADBC9F;
+  color: #FFB0B0;
   text-decoration: none;
 }
 
 a {
-  color: #FBFADA;
+  color: #FC6736;
   text-decoration: none;
 }
 
@@ -47,10 +47,10 @@ article li {
 
 time {
   font-size: 0.8em;
-  color: grey;
+  color: #FFB0B0;
 }
 
 .copyright {
   font-size: 0.9em;
-  color: #ADBC9F;
+  color: #FFB0B0;
 }
