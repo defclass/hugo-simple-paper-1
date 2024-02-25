@@ -4,7 +4,7 @@
         {{ .Content }}
     </div>
     <div class="posts">
-        <div>
+        <div class="en-post">
             <h4>Articles (English)</h4>
             {{ range ( where .Site.RegularPages "Type" "en" | first 10 ) }}
             <li>
