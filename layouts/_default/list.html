@@ -2,7 +2,7 @@
 <div>
     <h3>{{ .Title }}</h3>
     </hr>
-    <div class="posts">
+    <div class="{{ if eq .Section "cn" }}cn-post{{ else }}en-post{{ end }}">
         <ul>
             {{ range .Pages }}
             <li>
